@@ -1,0 +1,113 @@
+
+<br>
+<!-- Jumbotron -->
+<div class="container">
+<div class="jumbotron text-center text-light bg-dark text-center border border-warning rounded rounded-lg justify-content-md-center">
+  
+    <!-- Grid row -->
+    <!-- Grid row -->
+  <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 offset-md-1 mx-3 my-3">
+  
+        <!-- Featured image -->
+        <div class="view overlay">
+          <img src="../../assets/img/piramid-yugi.png" class="img-fluid" alt="piramide imagem">
+          <a>
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+  
+      </div>
+  
+      <!-- Grid column -->
+      <div class="col-xl-7 pb-2">
+         <!-- Title -->
+    <h1 class="card-title text-warning" style="font-family: teste;">{{'anime_piramid_title' | translate}}</h1>
+  
+    <!-- Subtitle -->
+    <h3 class="my-4 h3 justify-content-md">{{'juntar_desafio' | translate}}</h3>
+  
+        <h5 class="card-text text-justify">{{'home_piramid_description' | translate}}
+        </h5>
+        <br>
+      </div>
+      <!-- Grid column -->
+      <div class="container row">
+        <div class="col-md-1"></div>
+        <app-carousel-home-regras class="col-md-10"> </app-carousel-home-regras>
+      </div>
+  
+    </div>
+    <!-- Grid row -->
+  
+    <hr class="my-4 rgba-white-light">
+  
+    <div class="pt-2">
+      <button type="button" class="btn btn-outline-warning">Saiba mais<i class="fa fa-cubes ml-1"></i></button> &nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="button" class="btn btn-outline-warning">Cadastre-se!<i class="fa fa-cubes ml-1"></i></button>
+    </div>
+  
+  </div>
+  <!-- Jumbotron -->
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col"></div>
+      <div class="col-auto">
+          <ngb-carousel *ngIf="images" class="content-center">
+              <ng-template ngbSlide>  
+                  <div class="card mb-3 bg-warning">
+                      <div class="row no-gutters">
+                          <div class="col-md-4">
+                          <img [src]="images[0] " class="card-img rounded-circle" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title text-dark">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </ng-template>
+              <ng-template ngbSlide>  
+                  <div class="card mb-3 bg-warning">
+                      <div class="row no-gutters">
+                          <div class="col-md-4">
+                          <img [src]="images[1]" class="card-img rounded-circle" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title text-dark">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </ng-template>
+              <ng-template ngbSlide>  
+                  <div class="card mb-3 bg-warning">
+                      <div class="row no-gutters">
+                          <div class="col-md-4">
+                          <img [src]="images[2]" class="card-img rounded-circle" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title text-dark">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              </ng-template>
+            </ngb-carousel>
+      </div>
+      <div class="col"></div>
+    </div>
+  </div>

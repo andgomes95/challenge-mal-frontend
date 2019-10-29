@@ -1,0 +1,19 @@
+<br><div ngbDropdown class="d-inline-block">
+        <button class="btn btn-warning text-light" id="addAnimeDropdown" ngbDropdownToggle>Adicionar <i class="fa fa-plus"></i></button>
+        <div ngbDropdownMenu aria-labelledby="addAnimeDropdown">
+            <form class="px-4 py-3">
+                <div class="form-group">
+                    <input type="search" class="form-control" placeholder="Search" #box (keyup)="onKey(box.value)">
+                </div>
+            </form>
+            <div *ngIf="!keyworldSearchIsEmpty()" class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div>
+                  
+      </div>
