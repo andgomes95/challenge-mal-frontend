@@ -8,7 +8,8 @@ const routes: Routes = [
   {path: 'desafios', loadChildren: './modules/desafios/desafios.module#DesafiosModule'},
   {path: 'comunidade', loadChildren: './modules/comunidade/comunidade.module#ComunidadeModule'},
   {path: 'rankMAL', loadChildren: './modules/rank-mal/rank-mal.module#RankMalModule'},
-  {path: 'perfil', loadChildren: './modules/perfil/perfil.module#PerfilModule'}
+  {path: 'perfil', loadChildren: './modules/perfil/perfil.module#PerfilModule'},
+  {path: 'cadastro', loadChildren: './modules/cadastro-form/cadastro-form.module#CadastroFormModule'},
 
 
 ];
