@@ -1,5 +1,12 @@
 {
-    "anime_piramid_title" : "Anime Pyramid Challenge",
-    "juntar_desafio" : "Come join to this challenge!",
-    "home_piramid_description" : "The Anime Pyramid Challenge is a challenge where the goal is to complete a pyramid that is divided into 5 layers, each layer has a different task, with a different amount of anime. At each stage, the amount of animations becomes smaller, but the missions become more challenging! Come climb this pyramid with us!"
+    "anime_piramid_title" : "Product Name",
+    "juntar_desafio" : "Maecenas nisi urna, ornare eleifend dui sed!",
+    "home_piramid_description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper gravida odio vel hendrerit. Morbi sit amet eros iaculis libero accumsan vehicula sed at magna. Maecenas nisi urna, ornare eleifend dui sed, auctor egestas sem. Sed tempor mollis tristique. Mauris at elit ac quam volutpat mollis. Praesent venenatis dolor vel pretium maximus. Aliquam sapien lectus, viverra sed bibendum eget, porta quis elit. Aenean magna libero, elementum sed augue vel, tempor semper enim. Suspendisse feugiat massa sit amet lacus cursus convallis. Donec tincidunt diam egestas, convallis est a, vestibulum sem. Suspendisse sed odio eu mi euismod fringilla at eget justo. Quisque nisi metus, finibus a molestie at, ultricies vitae lorem.",
+    "anime_piramid_logo" : "ProductLogo",
+    "profile" : "Profile",
+    "challenges" : "Aba01",
+    "community": "Aba02",
+    "rank-mal" : "Aba03",
+    "registration" : "Sign Up",
+    "search" : "Search"
 }

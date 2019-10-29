@@ -1,15 +1,17 @@
 <br>
 <div class="container">
     <h1 class="text-center"> Formulário de Inscrição</h1>
-    <form>
+    <form #userForm="ngForm">
       <div class="form-group">
         <label for="username">UserName</label>
-        <input type="text" class="form-control" id="username" required>
+        <input type="text" class="form-control" id="username" required [(ngModel)]="model.username" name="username">
+        TODO: remove this: {{model.name}}
+
       </div>
 
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" class="form-control" id="password" required>
+        <input type="password" class="form-control" id="password" required [(ngModel)]="model.password" name="password">
       </div>
 
       <div class="form-group">
@@ -19,8 +21,20 @@
         </select>
       </div>
 
+       <div class="input-group">
+                    <div class="custom-file">
+                      Upload MaList:&nbsp;
+                        <form action="/api/upload" method="post" enctype="multipart/form-data">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                        </form>
+                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                    </div>
+                </div>
+      <br>
       <button type="submit" class="btn btn-success">Submit</button>
 
     </form>
+
+    {{diagnostic}}
 </div>
 
