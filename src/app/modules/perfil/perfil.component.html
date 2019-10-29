@@ -18,31 +18,27 @@
                     <a href="desafios#2d-lover" *ngIf="rank==4" class="badge badge-pill badge-warning">2D Lover</a>
                     <a href="desafios#hikikomori" *ngIf="rank==5" class="badge badge-pill badge-danger">Hikikomori</a></h6>
                     <div class="card-text"><b class="text-secondary text-center">
-                    <button type="button" class="btn btn-primary btn-circle btn-lg"><i class="fa fa-list"></i>
+                    <button type="button" class="btn btn-primary btn-circle btn-lg"><i class="fa fa-twitter"></i>
                     </button>&nbsp;
-                    <button type="button" class="btn btn-info btn-circle btn-lg"><i class="fa fa-link"></i>
+                    <button type="button" class="btn btn-danger btn-circle btn-lg"><i class="fa fa-instagram"></i>
                     </button>&nbsp;
-                    <button type="button" class="btn btn-success btn-circle btn-lg"><i class="fa fa-check"></i>
+                    <button type="button" class="btn btn-info btn-circle btn-lg"><i class="fa fa-facebook"></i>
                     </button>&nbsp;
-                    <button type="button" class="btn btn-warning btn-circle btn-lg"><i class="fa fa-check"></i>
+                    </b><br><br>
+                  <button type="button" class="btn btn-warning">MyAnimeList
                     </button>&nbsp;
-                    <button type="button" class="btn btn-danger btn-circle btn-lg"><i class="fa fa-check"></i>
-                    </button>&nbsp;
-                    <button type="button" class="btn btn-secondary btn-circle btn-lg"><i class="fa fa-check"></i>
-                    </button>
-                    </b>
                 </div>
                
                 <circle-progress
                   [percent]="progress"
-                  [radius]="100"
-                  [outerStrokeWidth]="10"
-                  [innerStrokeWidth]="10"
-                  [space] = "-10"
+                  [radius]="5"
+                  [outerStrokeWidth]="1"
+                  [innerStrokeWidth]="1"
+                  [space] = "-1"
                   [outerStrokeColor]="color"
                   [innerStrokeColor]="'#e7e8ea'"
-                  [titleFontSize]= "24"
-                  [unitsFontSize]= "24"
+                  [titleFontSize]= "2"
+                  [unitsFontSize]= "2"
                   [showSubtitle] = "false"
                   [animation]="true"
                   [animationDuration]="300"
