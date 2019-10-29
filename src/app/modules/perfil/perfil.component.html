@@ -32,8 +32,24 @@
                     </button>
                     </b>
                 </div>
-                <a href="#" class="card-link">Link do card</a>
-                <a href="#" class="card-link">Outro link</a>
+               
+                <circle-progress
+                  [percent]="progress"
+                  [radius]="100"
+                  [outerStrokeWidth]="10"
+                  [innerStrokeWidth]="10"
+                  [space] = "-10"
+                  [outerStrokeColor]="color"
+                  [innerStrokeColor]="'#e7e8ea'"
+                  [titleFontSize]= "24"
+                  [unitsFontSize]= "24"
+                  [showSubtitle] = "false"
+                  [animation]="true"
+                  [animationDuration]="300"
+                  [startFromZero]="false"
+                  [responsive]="true"
+                ></circle-progress>
+
             </div>
         </div>
     </div>

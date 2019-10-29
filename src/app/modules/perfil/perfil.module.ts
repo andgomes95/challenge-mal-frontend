@@ -4,6 +4,8 @@ import { NgbModule  } from '@ng-bootstrap/ng-bootstrap';
 import { Routes, RouterModule } from '@angular/router';
 import { PerfilComponent } from './perfil.component';
 import { AddAnimeDropdownComponent } from '../add-anime-dropdown/add-anime-dropdown.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 const routes: Routes = [
   {path: '', component: PerfilComponent}
@@ -15,7 +17,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    NgbModule
+    NgbModule,
+    NgCircleProgressModule.forRoot({})
   ],
   exports: [RouterModule]
 })
