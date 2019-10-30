@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AlertModule } from 'ngx-bootstrap';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {MenubarModule} from 'primeng/menubar';
@@ -14,6 +14,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { CadastroFormComponent } from './modules/cadastro-form/cadastro-form.component';
+import { DesafiosService } from './shared/services/desafios.service';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
@@ -26,6 +27,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     FooterComponent  ],
   imports: [
     BrowserModule,
+    FormsModule,
     AlertModule.forRoot(),
     AppRoutingModule,
     MenubarModule,
@@ -41,7 +43,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
       }
     })
   ],
-  providers: [],
+  providers: [DesafiosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
