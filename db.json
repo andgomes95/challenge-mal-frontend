@@ -1,8 +1,15 @@
 {
-  "posts": [
+  "usuario": [
     {
       "id": 1,
-      "title": "hello"
+      "username": "andre-ademir",
+      "password": "batata-frita",
+      "rank": 1,
+      "startdata": { "$date": "2014-01-22T14:56:59.301Z" },
+      "finishdata": { "$date": "2014-01-22T14:56:59.301Z" },
+      "desafio": null,
+      "list": []
+
     }
   ],
   "profile": {
