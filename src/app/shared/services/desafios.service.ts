@@ -14,7 +14,7 @@ export class DesafiosService extends GenericCrudService<Usuario> {
 
   
   constructor(protected http: HttpClient) {
-    super(http,  'https://my-json-server.typicode.com/andgomes95/challenge-mal-frontend/usuario');
+    super(http,  'usuario');
   }
 
   loadByID(id) {

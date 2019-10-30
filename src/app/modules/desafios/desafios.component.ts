@@ -12,8 +12,7 @@ export class DesafiosComponent implements OnInit {
   constructor(private service: DesafiosService) { }
   usuario = [];
   ngOnInit() {
-   this.usuario =  this.service.list().subscribe(console.log('ok'));
-   console.log(this.usuario[0].username);
+   this.service.list().subscribe(usuarios => this.usuario = usuarios);
   }
 
 }
