@@ -15,6 +15,7 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { CadastroFormComponent } from './modules/cadastro-form/cadastro-form.component';
 import { DesafiosService } from './shared/services/desafios.service';
+import { GenericCrudService } from './shared/services/generic-crud.service';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
@@ -43,7 +44,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
       }
     })
   ],
-  providers: [DesafiosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

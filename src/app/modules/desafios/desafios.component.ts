@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Desafio } from '../../shared/models/desafio.model';
+import { DesafiosService } from '../../shared/services/desafios.service';
 
 @Component({
   selector: 'app-desafios',
