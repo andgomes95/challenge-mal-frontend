@@ -2,14 +2,19 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable,throwError,of } from 'rxjs';
 import { catchError, tap, map } from 'rxjs/operators';
-import { Desafio } from '../models/desafio.model';
-import { GenericCrudService} from './generic-crud.service';
-import { environment } from '../../../environments/environment';
+import { Usuario } from '../models/usuario.model';
+import { GenericCrudService } from './generic-crud.service';
 
-export class Desafios extends GenericCrudService<Desafio> {
 
+@Injectable({
+  providedIn: 'root'
+})
+
+export class DesafiosService extends GenericCrudService<Usuario> {
+
+  
   constructor(protected http: HttpClient) {
-    super(http, `${environment.API}cursos`);
+    super(http,  'https://my-json-server.typicode.com/andgomes95/challenge-mal-frontend/usuario');
   }
 
   loadByID(id) {

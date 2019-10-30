@@ -9,9 +9,11 @@ import { DesafiosService } from '../../shared/services/desafios.service';
 })
 export class DesafiosComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private service: DesafiosService) { }
+  usuario = [];
   ngOnInit() {
+   this.usuario =  this.service.list().subscribe(console.log('ok'));
+   console.log(this.usuario[0].username);
   }
 
 }
