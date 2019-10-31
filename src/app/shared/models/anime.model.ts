@@ -8,7 +8,8 @@ export class Anime {
     type: string,
     studio: string,
     begin_status_mal: string,
-    episodes: number
+    episodes: number,
+    score: number
 
   ){  }
 
@@ -21,4 +22,5 @@ export class Anime {
   studio: string;
   begin_status_mal: string;
   episodes: number;
+  score: number;
 }
