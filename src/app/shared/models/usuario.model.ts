@@ -8,6 +8,7 @@ export class Usuario {
     startdata: Date,
     finishdata: Date,
     desafio: Desafio[],
+    userimage?: string,
     facebook?: string,
     twitter?: string,
     instagram?: string,
@@ -24,4 +25,5 @@ export class Usuario {
   twitter: string;
   instagram: string;
   mal_list: string;
+  userimage: string;
 }
