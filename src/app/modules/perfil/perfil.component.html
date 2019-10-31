@@ -23,15 +23,12 @@
                     <a href="desafios#2d-lover" *ngIf="usuario.rank==4" class="badge badge-pill badge-warning">Rank 04</a>
                     <a href="desafios#hikikomori" *ngIf="usuario.rank==5" class="badge badge-pill badge-danger">Rank 05</a></h6>
                     <div class="card-text"><b class="text-secondary text-center">
-                    <div *ngIf="usuario.twitter">
-                    <a class="btn btn-primary btn-circle btn-lg" href="https://www.twitter.com/{{usuario.twitter}}" target="_blank"><i class="fa fa-twitter"></i>
-                    </a>&nbsp;</div>
-                    <div *ngIf="usuario.instagram">
-                    <a class="btn btn-danger btn-circle btn-lg" href="https://www.instagram.com/{{usuario.instagram}}" target="_blank"><i class="fa fa-instagram"></i>
-                    </a>&nbsp;</div>
-                    <div *ngIf="usuario.facebook">
-                    <a class="btn btn-info btn-circle btn-lg" href="https://www.facebook.com/{{usuario.facebook}}" target="_blank"><i class="fa fa-facebook"></i>
-                    </a>&nbsp;</div>
+                    <a *ngIf="usuario.twitter" class="btn btn-primary btn-circle btn-lg" href="https://www.twitter.com/{{usuario.twitter}}" target="_blank"><i class="fa fa-twitter"></i>
+                    </a>&nbsp;
+                    <a *ngIf="usuario.instagram" class="btn btn-danger btn-circle btn-lg" href="https://www.instagram.com/{{usuario.instagram}}" target="_blank"><i class="fa fa-instagram"></i>
+                    </a>&nbsp;
+                    <a *ngIf="usuario.facebook" class="btn btn-info btn-circle btn-lg" href="https://www.facebook.com/{{usuario.facebook}}" target="_blank"><i class="fa fa-facebook"></i>
+                    </a>&nbsp;
                     </b>
                   <div *ngIf="usuario.mal_list">
                     <br><br>

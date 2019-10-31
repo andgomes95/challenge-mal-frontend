@@ -16,6 +16,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { CadastroFormComponent } from './modules/cadastro-form/cadastro-form.component';
 import { DesafiosService } from './shared/services/desafios.service';
 import { UsuarioService } from './shared/services/usuario.service';
+import { AnimeService } from './shared/services/anime.service';
 
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
@@ -45,7 +46,6 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
       }
     })
   ],
-  bootstrap: [AppComponent],
-  providers: [UsuarioService]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -76,7 +76,7 @@
 
     }
   ],
-  "Desafio": [
+  "desafio": [
     {
       "id": 1,
       "nome": "desafio_01",

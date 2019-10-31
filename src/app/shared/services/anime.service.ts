@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable,throwError,of } from 'rxjs';
 import { catchError, tap, map } from 'rxjs/operators';
-import { Desafio } from '../models/desafio.model';
+import { Anime } from '../models/anime.model';
 import { GenericCrudService } from './generic-crud.service';
 
 
@@ -10,14 +10,10 @@ import { GenericCrudService } from './generic-crud.service';
   providedIn: 'root'
 })
 
-export class DesafiosService extends GenericCrudService<Desafio> {
+export class DesafiosService extends GenericCrudService<Anime> {
 
   
   constructor(protected http: HttpClient) {
-    super(http,  'desafio');
-  }
-
-  loadByID(id) {
-    return null;
+    super(http,  'anime');
   }
 }
