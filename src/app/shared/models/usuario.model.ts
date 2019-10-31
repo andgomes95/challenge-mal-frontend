@@ -1,5 +1,4 @@
 import { Desafio } from './desafio.model';
-import { Anime } from './anime.model';
 export class Usuario {
   constructor(
     id: number,
@@ -8,8 +7,7 @@ export class Usuario {
     rank: number,
     startdata: Date,
     finishdata: Date,
-    desafio: Desafio,
-    list: Anime[]
+    desafio: Desafio[]
   ){}
 
   username: string;
@@ -18,5 +16,4 @@ export class Usuario {
   startdata: Date;
   finishdata: Date;
   desafio: Desafio;
-  list: Anime[];
 }

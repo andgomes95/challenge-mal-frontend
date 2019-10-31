@@ -7,12 +7,166 @@
       "rank": 1,
       "startdata": { "$date": "2014-01-22T14:56:59.301Z" },
       "finishdata": { "$date": "2014-01-22T14:56:59.301Z" },
-      "desafio": null,
-      "list": []
+      "desafio": [
+         {
+          "id": 1,
+          "nome": "desafio_01",
+          "rank": 1,
+          "list": [
+            {
+              "mal_id": 1,
+              "name": "Fullmetal Alchemist",
+              "genre": ["Action", "Fantasy", "Shounen"],
+              "season": "Fall 2020",
+              "classificacao_indicativa": "PG +13",
+              "type": "TV",
+              "studio": "Bones",
+              "begin_status_mal": "Plan to Watch",
+              "episodes": 52
+            },
+                {
+              "mal_id": 2,
+              "name": "Fullmetal Panic",
+              "genre": ["Action", "Mecha", "Seinen"],
+              "season": "Spring 2016",
+              "classificacao_indicativa": "PG +17",
+              "type": "Movie",
+              "studio": "Madhouse",
+              "begin_status_mal": "Plan to Watch",
+              "episodes": 26
+            }
+
+          ]
+        },
+        {
+          "id": 2,
+          "nome": "desafio_02",
+          "rank": 2,
+          "list": [
+            {
+              "mal_id": 2,
+              "name": "Fullmetal Panic",
+              "genre": ["Action", "Mecha", "Seinen"],
+              "season": "Spring 2016",
+              "classificacao_indicativa": "PG +17",
+              "type": "Movie",
+              "studio": "Madhouse",
+              "begin_status_mal": "Plan to Watch",
+              "episodes": 26
+            },
+                
+            {
+              "mal_id": 3,
+              "name": "Gunbuster",
+              "genre": ["Military", "Space", "Shoujo"],
+              "season": "Winter 2018",
+              "classificacao_indicativa": "PG +13",
+              "type": "OVA",
+              "studio": "Triger",
+              "begin_status_mal": "Plan to Watch",
+              "episodes": 13
+            }
+          ]
+        }
+      ]
 
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "Desafio": [
+    {
+      "id": 1,
+      "nome": "desafio_01",
+      "rank": 1,
+      "list": [
+        {
+          "mal_id": 1,
+          "name": "Fullmetal Alchemist",
+          "genre": ["Action", "Fantasy", "Shounen"],
+          "season": "Fall 2020",
+          "classificacao_indicativa": "PG +13",
+          "type": "TV",
+          "studio": "Bones",
+          "begin_status_mal": "Plan to Watch",
+          "episodes": 52
+        },
+            {
+          "mal_id": 2,
+          "name": "Fullmetal Panic",
+          "genre": ["Action", "Mecha", "Seinen"],
+          "season": "Spring 2016",
+          "classificacao_indicativa": "PG +17",
+          "type": "Movie",
+          "studio": "Madhouse",
+          "begin_status_mal": "Plan to Watch",
+          "episodes": 26
+        }
+
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "desafio_02",
+      "rank": 2,
+      "list": [
+        {
+          "mal_id": 2,
+          "name": "Fullmetal Panic",
+          "genre": ["Action", "Mecha", "Seinen"],
+          "season": "Spring 2016",
+          "classificacao_indicativa": "PG +17",
+          "type": "Movie",
+          "studio": "Madhouse",
+          "begin_status_mal": "Plan to Watch",
+          "episodes": 26
+        },
+            
+        {
+          "mal_id": 3,
+          "name": "Gunbuster",
+          "genre": ["Military", "Space", "Shoujo"],
+          "season": "Winter 2018",
+          "classificacao_indicativa": "PG +13",
+          "type": "OVA",
+          "studio": "Triger",
+          "begin_status_mal": "Plan to Watch",
+          "episodes": 13
+        }
+      ]
+    }
+  ],
+  "anime": [
+    {
+      "mal_id": 1,
+      "name": "Fullmetal Alchemist",
+      "genre": ["Action", "Fantasy", "Shounen"],
+      "season": "Fall 2020",
+      "classificacao_indicativa": "PG +13",
+      "type": "TV",
+      "studio": "Bones",
+      "begin_status_mal": "Plan to Watch",
+      "episodes": 52
+    },
+      {
+      "mal_id": 2,
+      "name": "Fullmetal Panic",
+      "genre": ["Action", "Mecha", "Seinen"],
+      "season": "Spring 2016",
+      "classificacao_indicativa": "PG +17",
+      "type": "Movie",
+      "studio": "Madhouse",
+      "begin_status_mal": "Plan to Watch",
+      "episodes": 26
+    },
+        {
+      "mal_id": 3,
+      "name": "Gunbuster",
+      "genre": ["Military", "Space", "Shoujo"],
+      "season": "Winter 2018",
+      "classificacao_indicativa": "PG +13",
+      "type": "OVA",
+      "studio": "Triger",
+      "begin_status_mal": "Plan to Watch",
+      "episodes": 13
+    }
+  ]
 }

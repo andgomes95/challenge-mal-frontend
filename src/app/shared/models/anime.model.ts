@@ -2,7 +2,7 @@ export class Anime {
   constructor(
     mal_id: number,
     name: string,
-    genre: string,
+    genre: string[],
     season: string,
     classificacao_indicativa: string,
     type: string,
@@ -14,7 +14,7 @@ export class Anime {
 
   mal_id: number;
   name: string;
-  genre: string;
+  genre: string[];
   season: string;
   classificacao_indicativa: string;
   type: string;
