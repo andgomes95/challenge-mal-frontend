@@ -7,7 +7,11 @@ export class Usuario {
     rank: number,
     startdata: Date,
     finishdata: Date,
-    desafio: Desafio[]
+    desafio: Desafio[],
+    facebook?: string,
+    twitter?: string,
+    instagram?: string,
+    mal_list?: string
   ){}
 
   username: string;
@@ -16,4 +20,8 @@ export class Usuario {
   startdata: Date;
   finishdata: Date;
   desafio: Desafio;
+  facebook: string;
+  twitter: string;
+  instagram: string;
+  mal_list: string;
 }
