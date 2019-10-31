@@ -1,38 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
-interface Country {
-  name: string;
-  flag: string;
-  area: number;
-  population: number;
-}
-
-const COUNTRIES: Country[] = [
-  {
-    name: 'Russia',
-    flag: 'f/f3/Flag_of_Russia.svg',
-    area: 17075200,
-    population: 146989754
-  },
-  {
-    name: 'Canada',
-    flag: 'c/cf/Flag_of_Canada.svg',
-    area: 9976140,
-    population: 36624199
-  },
-  {
-    name: 'United States',
-    flag: 'a/a4/Flag_of_the_United_States.svg',
-    area: 9629091,
-    population: 324459463
-  },
-  {
-    name: 'China',
-    flag: 'f/fa/Flag_of_the_People%27s_Republic_of_China.svg',
-    area: 9596960,
-    population: 1409517397
-  }
-];
+import { UsuarioService } from '../../shared/services/usuario.service';
+import { Usuario } from '../../shared/models/usuario.model';
 
 
 @Component({
@@ -42,22 +10,22 @@ const COUNTRIES: Country[] = [
 })
 
 export class PerfilComponent implements OnInit {
-  username : string = "YamiYuugi";
-  rank : number = 1;
-  countries = COUNTRIES;
-  constructor() { }
+  userID = 1;
+  usuario: Usuario;
+  constructor(private service: UsuarioService) { }
 progress = 0.0;
   progressBar = document.querySelector('.progress-bar');
   intervalId;
   color = '#000000';
   ngOnInit() {
+    
+    this.getUserData();
     const getDownloadProgress = () => {
-      console.log('getDownload', this);
-      if (this.progress < 70.0) {
-        console.log('inside if', this.progress);
+      let progress = 0.0;
+      if (this.progress && progress < this.progress) {
         let value = this.hslToRgb(120.0/255.0*this.progress/100.0, 1, 0.5)
         this.color = this.num2hex(value)
-        this.progress = this.progress + 1.0;
+        progress = progress + 1.0;
         
       }
       else {
@@ -109,6 +77,13 @@ progress = 0.0;
     }
     return(hex);
   }
+
+  getUserData(){
+    this.service.loadByID(this.userID).subscribe(usuarios => {
+      this.usuario = usuarios;
+      this.progress = (this.usuario.desafio[0].list.length)/55.0*100.0;
+    }
+)}
 
   
 

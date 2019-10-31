@@ -4,7 +4,7 @@
       "id": 1,
       "username": "andre-ademir",
       "password": "batata-frita",
-      "rank": 1,
+      "rank": 2,
       "startdata": { "$date": "2014-01-22T14:56:59.301Z" },
       "finishdata": { "$date": "2014-01-22T14:56:59.301Z" },
       "desafio": [
