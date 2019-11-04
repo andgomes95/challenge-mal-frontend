@@ -10,7 +10,7 @@ import { GenericCrudService } from './generic-crud.service';
   providedIn: 'root'
 })
 
-export class DesafiosService extends GenericCrudService<Anime> {
+export class AnimeService extends GenericCrudService<Anime> {
 
   
   constructor(protected http: HttpClient) {
