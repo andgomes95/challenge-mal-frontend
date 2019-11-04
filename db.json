@@ -171,6 +171,17 @@
       "studio": "Triger",
       "begin_status_mal": "Plan to Watch",
       "episodes": 13
+    },
+     {
+      "mal_id": 4,
+      "name": "K-on",
+      "genre": ["Music", "Slice of Life", "Comedy"],
+      "season": "Winter 2018",
+      "classificacao_indicativa": "PG +13",
+      "type": "OVA",
+      "studio": "Triger",
+      "begin_status_mal": "Plan to Watch",
+      "episodes": 13
     }
   ]
 }

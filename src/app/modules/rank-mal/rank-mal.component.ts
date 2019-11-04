@@ -1,16 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Anime } from '../../shared/models/anime.model';
+import { Desafios } from '../../shared/models/desafios.model';
 import { DesafiosService } from '../../shared/services/desafios.service';
 import { AnimeService } from '../../shared/services/anime.service';
 
-
-const HEROES = [
-    {id: 1, name:'Superman'},
-    {id: 2, name:'Batman'},
-    {id: 5, name:'BatGirl'},
-    {id: 3, name:'Robin'},
-    {id: 4, name:'Flash'}
-];
 
 @Component({
   selector: 'app-rank-mal',
@@ -21,6 +14,9 @@ const HEROES = [
 export class RankMalComponent implements OnInit {
   
   listAnime : Anime[] = [];
+  animes : Anime[] = [];
+  desafios : Desafios[] = [];
+  classificacao: string = "Classificação Geral";
   
   constructor(
     private animeService: AnimeService,
@@ -28,6 +24,28 @@ export class RankMalComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.animeService.list().subscribe(animes => {
+      this.animes = animes; this.listAnime = animes});
+      this.desafioService.list().subscribe(desafios=> {
+      this.desafios = desafios});
+  }
+
+  onClickClassificacao(){
+
+    this.classificacao = "Classificação Geral";
+    this.listAnime = this.animes;
+  }
+
+  onClickDesafioA(){
+
+    this.classificacao = "Desafio A";
+    this.listAnime = this.desafios[0].list;
+  }
+
+  onClickDesafioB(){
+
+    this.classificacao = "Desafio B";
+    this.listAnime = this.desafios[1].list;
   }
 
 }

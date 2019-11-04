@@ -1,14 +1,15 @@
 <br>
 <div class="container">
+  <div class="h3">MAL RANK</div>
   <div class="row">
-    <div class="h3 text-left col-8">MAL RANK</div>
+    <div class=" text-left col-8"><b>{{classificacao}}</b></div>
     <div class="col-4 text-right">
       <div ngbDropdown class="d-inline-block">
-        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Classificação</button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button ngbDropdownItem>Action - 1</button>
-          <button ngbDropdownItem>Another Action</button>
-          <button ngbDropdownItem>Something else is here</button>
+          <button ngbDropdownItem (click)="onClickClassificacao()">Classificação Geral</button>
+          <button ngbDropdownItem (click)="onClickDesafioA()">Desafio A</button>
+          <button ngbDropdownItem (click)="onClickDesafioB()"> Desafio B</button>
         </div>
       </div>
     </div>
@@ -18,31 +19,21 @@
   <thead class="thead-light">
     <tr>
       <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Episodios</th>
+      <th scope="col">Score</th>
     </tr>
   </thead>
-  <tbody>
+  <tbody *ngFor="let anime of listAnime; let i = index">
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <th scope="row" *ngIf="i==0">1</th>
+      <th scope="row" *ngIf="i==1">2</th>
+      <th scope="row" *ngIf="i==2">3</th>
+      <th scope="row" *ngIf="i>2">{{i+1}}</th>
+      <td>{{anime.name}}</td>
+      <td>{{anime.episodes}}</td>
+      <td>{{anime.score}}</td>
     </tr>
   </tbody>
 </table>
-  </div>
 </div>
