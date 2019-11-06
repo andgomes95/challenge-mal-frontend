@@ -23,7 +23,6 @@ export class DesafiosComponent implements OnInit {
     this.service.list().subscribe(desafios=> {
       for(let value of desafios){
         if(value.rank ==1){
-          console.log("DEU");
           this.rank1.push(value);
         }else if(value.rank ==2){
           this.rank2.push(value);
