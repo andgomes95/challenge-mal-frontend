@@ -3,6 +3,7 @@ export class Desafio {
   constructor(
     id: number,
     nome: string,
+    descricao: string,
     rank: number,
     list: Anime[]
 
@@ -11,5 +12,6 @@ export class Desafio {
     nome: string;
     rank: number;
     list: Anime[];
+    descricao: string;
 
 }
