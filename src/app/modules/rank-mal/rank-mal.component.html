@@ -8,8 +8,10 @@
         <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Classificação</button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
           <button ngbDropdownItem (click)="onClickClassificacao()">Classificação Geral</button>
-          <button ngbDropdownItem (click)="onClickDesafioA()">Desafio A</button>
-          <button ngbDropdownItem (click)="onClickDesafioB()"> Desafio B</button>
+          <div class="dropdown-divider"></div>
+          <div *ngFor="let desafio of desafios; let i = index">
+          <button ngbDropdownItem (click)="onClickDesafioGeneric(i)">{{desafio.nome}}</button>
+          </div>
         </div>
       </div>
     </div>
@@ -26,9 +28,9 @@
   </thead>
   <tbody *ngFor="let anime of listAnime; let i = index">
     <tr>
-      <th scope="row" *ngIf="i==0">1</th>
-      <th scope="row" *ngIf="i==1">2</th>
-      <th scope="row" *ngIf="i==2">3</th>
+      <th scope="row" *ngIf="i==0"><i class="fa fa-star" style="color: gold;"></i></th>
+      <th scope="row" *ngIf="i==1"><i class="fa fa-star" style="color: silver;"></i></th>
+      <th scope="row" *ngIf="i==2"><i class="fa fa-star" style="color: #cd7f32;"></i></th>
       <th scope="row" *ngIf="i>2">{{i+1}}</th>
       <td>{{anime.name}}</td>
       <td>{{anime.episodes}}</td>

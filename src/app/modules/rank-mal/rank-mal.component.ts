@@ -36,10 +36,10 @@ export class RankMalComponent implements OnInit {
     this.listAnime = this.animes;
   }
 
-  onClickDesafioA(){
+  onClickDesafioGeneric(index: number){
 
-    this.classificacao = "Desafio A";
-    this.listAnime = this.desafios[0].list;
+    this.classificacao = this.desafios[index].nome;
+    this.listAnime = this.desafios[index].list;
   }
 
   onClickDesafioB(){
