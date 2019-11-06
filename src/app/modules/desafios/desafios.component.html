@@ -39,186 +39,31 @@
     <br>
     <h2 class="text-primary text-center">Rank 01</h2>
     <br>
-    <div class="row">
-        <div class="col-sm-3 card text-white bg-dark">
-            <h5 class="card-header">desafio 01</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 animes de uma unica temporada.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-primary">Animes Possiveis</a></div>
-            
+    <div *ngFor="let desafio of rank1">
+      <div class="card col-sm-4">
+        <div class="card-header">
+          {{desafio.nome}}
         </div>
-        <div class="col-sm-3 card bg-secondary">
-            <h5 class="card-header">desafio 02</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 filmes de anime.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-primary">Animes Possiveis</a></div>
-            
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
-        <div class="col-sm-3 card text-white bg-dark">
-            <h5 class="card-header">desafio 03</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 animes com a classificação indicativa PG+13.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-primary">Animes Possiveis</a></div>
-            
-        </div>
-        <div class="col-sm-3 card bg-secondary">
-            <div class="card-header"><h5>desafio 04</h5></div>
-            <div class="card-body">
-                <p class="card-text">Assista um anime que começa com cada letra do alfabeto, podendo ignorar uma única letra.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-primary">Animes Possiveis</a></div>
-        </div>
-
+      </div>
     </div>
-    <br>
     <h2 class="text-info text-center " id="fanboy-shounen">rank 02</h2>
     <br>
-    <div class="row">
-        <div class="col-sm-3 card text-white bg-dark">
-            <h5 class="card-header">Devorador de Temporadas</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 animes de uma unica temporada.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-info">Animes Possiveis</a></div>
-            
-        </div>
-        <div class="col-sm-3 card bg-secondary">
-            <h5 class="card-header">Cinefilo Otaku</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 filmes de anime.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-info">Animes Possiveis</a></div>
-            
-        </div>
-        <div class="col-sm-3 card text-white bg-dark">
-            <h5 class="card-header">Forever Young</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 animes com a classificação indicativa PG+13.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-info">Animes Possiveis</a></div>
-            
-        </div>
-        <div class="col-sm-3 card bg-secondary">
-            <div class="card-header"><h5>Animes de A a Z</h5></div>
-            <div class="card-body">
-                <p class="card-text">Assista um anime que começa com cada letra do alfabeto, podendo ignorar uma única letra.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-info">Animes Possiveis</a></div>
-        </div>
-
-    </div>
+   VALUE =  {{rank2[0]}}
     <br>
-    <h2 class="text-success text-center">Otaku Fedido Rank</h2>
+    <h2 class="text-success text-center">Rank 3</h2>
     <br>
-    <div class="row">
-        <div class="col-sm-3 card text-white bg-dark">
-            <h5 class="card-header">Devorador de Temporadas</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 animes de uma unica temporada.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-success">Animes Possiveis</a></div>
-            
-        </div>
-        <div class="col-sm-3 card bg-secondary">
-            <h5 class="card-header">Cinefilo Otaku</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 filmes de anime.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-success">Animes Possiveis</a></div>
-            
-        </div>
-        <div class="col-sm-3 card text-white bg-dark">
-            <h5 class="card-header">Forever Young</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 animes com a classificação indicativa PG+13.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-success">Animes Possiveis</a></div>
-            
-        </div>
-        <div class="col-sm-3 card bg-secondary">
-            <div class="card-header"><h5>Animes de A a Z</h5></div>
-            <div class="card-body">
-                <p class="card-text">Assista um anime que começa com cada letra do alfabeto, podendo ignorar uma única letra.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-success">Animes Possiveis</a></div>
-        </div>
-
-    </div>
+   VALUE = {{rank3[0]}}
     <br>
-    <h2 class="text-warning text-center">2D Lover</h2>
+    <h2 class="text-warning text-center">Rank 4</h2>
     <br>
-    <div class="row">
-        <div class="col-sm-3 card text-white bg-dark">
-            <h5 class="card-header">Devorador de Temporadas</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 animes de uma unica temporada.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-warning">Animes Possiveis</a></div>
-            
-        </div>
-        <div class="col-sm-3 card bg-secondary">
-            <h5 class="card-header">Cinefilo Otaku</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 filmes de anime.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-warning">Animes Possiveis</a></div>
-            
-        </div>
-        <div class="col-sm-3 card text-white bg-dark">
-            <h5 class="card-header">Forever Young</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 animes com a classificação indicativa PG+13.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-warning">Animes Possiveis</a></div>
-            
-        </div>
-        <div class="col-sm-3 card bg-secondary">
-            <div class="card-header"><h5>Animes de A a Z</h5></div>
-            <div class="card-body">
-                <p class="card-text">Assista um anime que começa com cada letra do alfabeto, podendo ignorar uma única letra.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-warning">Animes Possiveis</a></div>
-        </div>
-
-    </div>
+   VALUE = {{rank4[0]}}
     <br>
-    <h2 class="text-danger text-center">Hikikomori</h2>
+    <h2 class="text-danger text-center">Rank 5</h2>
     <br>
-    <div class="row">
-        <div class="col-sm-3 card text-white bg-dark">
-            <h5 class="card-header">Devorador de Temporadas</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 animes de uma unica temporada.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-danger">Animes Possiveis</a></div>
-            
-        </div>
-        <div class="col-sm-3 card bg-secondary">
-            <h5 class="card-header">Cinefilo Otaku</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 filmes de anime.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-danger">Animes Possiveis</a></div>
-            
-        </div>
-        <div class="col-sm-3 card text-white bg-dark">
-            <h5 class="card-header">Forever Young</h5>
-            <div class="card-body">
-                <p class="card-text">Assista 12/13 animes com a classificação indicativa PG+13.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-danger">Animes Possiveis</a></div>
-            
-        </div>
-        <div class="col-sm-3 card bg-secondary">
-            <div class="card-header"><h5>Animes de A a Z</h5></div>
-            <div class="card-body">
-                <p class="card-text">Assista um anime que começa com cada letra do alfabeto, podendo ignorar uma única letra.</p>
-            </div>
-            <div class="card-footer text-center"><a href="#" class="btn btn-danger">Animes Possiveis</a></div>
-        </div>
-
-    </div>
+   VALUE = {{rank5[0]}}
 </div>

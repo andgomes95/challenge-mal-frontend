@@ -10,9 +10,32 @@ import { DesafiosService } from '../../shared/services/desafios.service';
 export class DesafiosComponent implements OnInit {
 
   constructor(private service: DesafiosService) { }
-  usuario = [];
+  rank1: Desafio[] = [];
+  rank2: Desafio[] = [];
+  rank3: Desafio[] = [];
+  rank4: Desafio[] = [];
+  rank5: Desafio[] = [];
   ngOnInit() {
-   this.service.list().subscribe(usuarios => this.usuario = usuarios);
+   this.getDesafios();
+  }
+
+  getDesafios(){
+    this.service.list().subscribe(desafios=> {
+      for(let value of desafios){
+        if(value.rank ==1){
+          console.log("DEU");
+          this.rank1.push(value);
+        }else if(value.rank ==2){
+          this.rank2.push(value);
+        }else if(value.rank ==3){
+          this.rank3.push(value);
+        }else if(value.rank ==4){
+          this.rank4.push(value);
+        }else if(value.rank ==5){
+          this.rank5.push(value);
+        }
+      }
+    });
   }
 
 }

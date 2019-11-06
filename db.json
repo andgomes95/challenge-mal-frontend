@@ -136,6 +136,36 @@
           "episodes": 13
         }
       ]
+    },
+    {
+      "id": 3,
+      "nome": "desafio_02_copy",
+      "rank": ,
+      "list": [
+        {
+          "mal_id": 2,
+          "name": "Fullmetal Panic",
+          "genre": ["Action", "Mecha", "Seinen"],
+          "season": "Spring 2016",
+          "classificacao_indicativa": "PG +17",
+          "type": "Movie",
+          "studio": "Madhouse",
+          "begin_status_mal": "Plan to Watch",
+          "episodes": 26
+        },
+            
+        {
+          "mal_id": 3,
+          "name": "Gunbuster",
+          "genre": ["Military", "Space", "Shoujo"],
+          "season": "Winter 2018",
+          "classificacao_indicativa": "PG +13",
+          "type": "OVA",
+          "studio": "Triger",
+          "begin_status_mal": "Plan to Watch",
+          "episodes": 13
+        }
+      ]
     }
   ],
   "anime": [
