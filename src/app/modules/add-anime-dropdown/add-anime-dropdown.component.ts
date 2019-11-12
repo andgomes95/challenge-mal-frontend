@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Anime } from '../../shared/models/anime.model';
+import { AnimeService } from '../../shared/services/anime.service';
 
 @Component({
   selector: 'app-add-anime-dropdown',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddAnimeDropdownComponent implements OnInit {
   keyworldSearch: string = "";
-  constructor() { }
-
+  constructor(private animeService: AnimeService) { }
+  listAnime : Anime[] = [];
+  animes : Anime[] = [];
   ngOnInit() {
+    this.animeService.list().subscribe(animes => {
+      this.animes = animes; this.listAnime = animes
+    });
   }
   onKey(value: string) {
     this.keyworldSearch = value;
@@ -21,6 +27,10 @@ export class AddAnimeDropdownComponent implements OnInit {
     }else{
       return false;
     }
+  }
+
+  selectAnime(anime: Anime){
+    console.log(anime);
   }
 
 }

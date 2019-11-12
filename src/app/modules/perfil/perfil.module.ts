@@ -8,6 +8,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 const routes: Routes = [
+  {path: ':username', component: PerfilComponent},
   {path: '', component: PerfilComponent}
 ];
 

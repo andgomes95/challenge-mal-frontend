@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UsuarioService } from '../../shared/services/usuario.service';
 import { Usuario } from '../../shared/models/usuario.model';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 
 @Component({
@@ -12,13 +14,15 @@ import { Usuario } from '../../shared/models/usuario.model';
 export class PerfilComponent implements OnInit {
   userID = 1;
   usuario: Usuario;
-  constructor(private service: UsuarioService) { }
-progress = 0.0;
+  constructor(private service: UsuarioService,
+   private router: Router,
+   private location: Location) { }
+  progress = 0.0;
   progressBar = document.querySelector('.progress-bar');
   intervalId;
   color = '#000000';
   ngOnInit() {
-    
+    this.userID = parseInt(this.router.parseUrl(this.location.path()).queryParams['id']) || 1;
     this.getUserData();
     const getDownloadProgress = () => {
       let progress = 0.0;
@@ -79,9 +83,11 @@ progress = 0.0;
   }
 
   getUserData(){
+    console.log("TEST1 "+this.userID);
     this.service.loadByID(this.userID).subscribe(usuarios => {
       this.usuario = usuarios;
       this.progress = (this.usuario.desafio[0].list.length)/55.0*100.0;
+      console.log("TEST2 "+this.userID);
     }
 )}
 
