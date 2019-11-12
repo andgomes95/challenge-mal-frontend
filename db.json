@@ -81,7 +81,7 @@
       "id": 2,
       "username": "casa",
       "password": "fruta",
-      "rank": 2,
+      "rank": ,
       "startdata": { "$date": "2014-01-10T14:56:59.301Z" },
       "finishdata": { "$date": "2014-01-11T14:56:59.301Z" },
       "desafio": [
@@ -115,39 +115,7 @@
             }
 
           ]
-        },
-        {
-          "id": 2,
-          "nome": "desafio_02",
-          "rank": 2,
-          "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultrices vel arcu convallis auctor. Maecenas sit amet lorem velit. Suspendisse ut metus euismod, vulputate ligula imperdiet, mollis neque. Praesent blandit, lectus sit amet varius eleifend, dolor quam rhoncus purus, sit amet auctor ipsum felis quis mi.",
-          "list": [
-            {
-              "mal_id": 2,
-              "name": "Fullmetal Panic",
-              "genre": ["Action", "Mecha", "Seinen"],
-              "season": "Spring 2016",
-              "classificacao_indicativa": "PG +17",
-              "type": "Movie",
-              "studio": "Madhouse",
-              "begin_status_mal": "Plan to Watch",
-              "episodes": 26
-            },
-                
-            {
-              "mal_id": 3,
-              "name": "Gunbuster",
-              "genre": ["Military", "Space", "Shoujo"],
-              "season": "Winter 2018",
-              "classificacao_indicativa": "PG +13",
-              "type": "OVA",
-              "studio": "Triger",
-              "begin_status_mal": "Plan to Watch",
-              "episodes": 13
-            }
-          ]
-        }
-      ],
+        }],
       "instagram": "neymarjr",
       "twitter": "dandy_beel",
       "facebook": "andrelucasng",
